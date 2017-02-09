@@ -1,14 +1,20 @@
-<!--
-<div class="form">
-    <div class="textForm">Usuario:</div>
-    <input type="text" placeholder="usuario" />
-    
-    <div class="textForm">Clave:</div>
-    <input type="password" placeholder="clave" />
-    
+<div>
+    <h1>
+        Inicio de Sesion
+    </h1>
     <div>
-        <button *ngIf="iniciar == true">Entrar</button>
+        <div>
+            <button (click)="googleLogin()">
+                Iniciar con cuenta Google
+            </button>
+        </div>
+        <br>
+        <div>
+            <button  (click)="facebookLogin()">
+                Iniciar con Facebook
+            </button>
+        </div>
+        <br>
     </div>
-</div> 
- -->
-<div class="g-signin2" data-onsuccess="onSignIn"></div>
+
+</div>
